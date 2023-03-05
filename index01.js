@@ -149,3 +149,237 @@
 //     ourNumber = Number(prompt("Введи число"));
    
 // }
+
+//TODO:===================================
+//Даний рядок, що складається із символів, наприклад, 'abcde'.
+// Перевірте, що першим символом цього рядка є буква 'a'.
+// Якщо це так - виведіть 'так', інакше виведіть 'ні'.
+
+// const string = "abcde";
+
+// // if (string.indexOf("a"))
+
+// if (string[0] === "a") {
+//   console.log("Yes");
+// } else {
+//   console.log("No");
+// }
+
+//TODO:===================================
+// Напишіть if..else, що відповідає наступному switch:
+
+// switch (browser) {
+//   case 'Edge':
+//     alert( "You've got the Edge!" );
+//     break;
+
+//   case 'Chrome':
+//   case 'Firefox':
+//   case 'Safari':
+//   case 'Opera':
+//     alert( 'Okay we support these browsers too' );
+//     break;
+
+//   default:
+//     alert( 'We hope that this page looks ok!' );
+// }
+// const browser = "dfg";
+// if (browser === 'Edge') {
+//   console.log( "You've got the Edge!" );
+// } else if (browser === 'Chrome' || browser === 'Firefox' || browser === 'Safari' || browser === 'Opera'){
+//   console.log('Okay we support these browsers too');
+// } else {console.log("We hope that this page looks ok!")}
+//____________________________
+
+// Напишіть через свіч пошуку автора мови програмування
+//  пишемо назву мови у шаблонному рядку отримує відповідь мова та автор
+//  PHP Расмус Лердорф
+//  C# група інженерів компанії Microsoft під керівництвом Андерса Хейлсберга та Скотта Вільтаумота
+//  Swift Кріс Латтнер
+//  JS Брендан Ейх
+//  Java Джеймс Гослінг
+//  Python Гвідо ван Россум
+
+// let lang = "Python";
+// const autors = ["Расмус Лердорф", "Андерса Хейлсберга та Скотта Вільтаумота", "Кріс Латтнер", "Брендан Ейх", "Джеймс Гослінг", "Гвідо ван Россум"];
+
+// switch(lang) {
+//   case "PHP": console.log(`Languge ${lang} was created by ${autors[0]}`);
+//         break;
+//   case "C#": console.log(`Languge ${lang} was created by ${autors[1]}`);
+//         break;
+//   case "Swift": console.log(`Languge ${lang} was created by ${autors[2]}`);
+//         break;
+//   case "JS": console.log(`Languge ${lang} was created by ${autors[3]}`);
+//         break;
+//   case "Java": console.log(`Languge ${lang} was created by ${autors[4]}`);
+//         break;
+//   case "Python": console.log(`Languge ${lang} was created by ${autors[5]}`);
+//         break;
+// }
+
+// НАПИШІТЬ РЕЧЕННЯ ЗА ДОПОМОГОЮ ШАБЛОННОГО РЯДКА "ДОБРОГО ДНЯ,МЕНЕ ЗВАТИ Ярослав, МЕНІ 35 РОКІВ, Я ВИВЧАЮ JAVASCRIPT"
+// const name = "Yara";
+// const age = 34;
+// const lang = "JAVASCRIPT";
+
+// console.log(`ДОБРОГО ДНЯ,МЕНЕ ЗВАТИ ${name}, МЕНІ ${age} РОКІВ, Я ВИВЧАЮ ${lang}`)
+
+// НАПИШІТЬ ПРОГРАМУ , ЯКА БУДЕ ЗАПИТУВАТИ У КОРИСТУВАЧА ПЕРІОД ПІДПИСКИ НА СЕРВІС ТА ПОКАЗУВАТИМЕ ЦІНУ ПІДПИСКИ(ВИКОРИСТАЙ IF..ELSE, ТА ПЕРЕПИШИ НА SWITCH)
+// ЯКЩО ДЕНЬ - ціна 1.99
+// ЯУЩО НЕДІЛЯ - ціна 5.99
+// ЯКЩО МІСЯЦЬ - ціна 10.99
+// ЯКЩО РІК - ціна 100.99
+
+// const subsPeriod = ["ДЕНЬ", "НЕДІЛЯ", "МІСЯЦЬ", "РІК"];
+// const periodPrice = [1.99, 5.99, 10.99, 100.99 ];
+// const yourSubs = "";
+
+// if (yourSubs === subsPeriod[0]) {
+//   console.log(`Your subscription price is ${periodPrice[0]}`)
+// } else if (yourSubs === subsPeriod[1]) {
+//   console.log(`Your subscription price is ${periodPrice[1]}`)}
+
+//   else if (yourSubs === subsPeriod[2]) {
+//   console.log(`Your subscription price is ${periodPrice[2]}`)}
+
+//   else if (yourSubs === subsPeriod[3]) {
+//   console.log(`Your subscription price is ${periodPrice[3]}`)}
+
+// switch(yourSubs) {
+//   case subsPeriod[0]: {
+//     console.log(`Your subscription price is ${periodPrice[0]}`);
+//     break;
+// }
+//   case subsPeriod[1]: {
+//     console.log(`Your subscription price is ${periodPrice[1]}`);
+//     break;
+// }
+//   case subsPeriod[2]: {
+//     console.log(`Your subscription price is ${periodPrice[2]}`);
+//     break;
+// }
+//   case subsPeriod[3]: {
+//     console.log(`Your subscription price is ${periodPrice[3]}`);
+//     break;
+// }
+//   default: {
+//     console.log(`Upps...`);
+//   }
+// }
+
+// НАПИШІТЬ ПРОГРАМУ , ЯКА БУДЕ ЗАПИТУВАТИ У КОРИСТУВАЧА ПЕРІОД ПІДПИСКИ НА СЕРВІС ТА ПОКАЗУВАТИМЕ ЦІНУ ПІДПИСКИ(ВИКОРИСТАЙ IF..ELSE, ТА ПЕРЕПИШИ НА SWITCH)
+// ЯКЩО ДЕНЬ - ціна 1.99
+// ЯУЩО НЕДІЛЯ - ціна 5.99
+// ЯКЩО МІСЯЦЬ - ціна 10.99
+// ЯКЩО РІК - ціна 100.99
+// Object version
+
+// const subscription = {
+//   price: [1.99, 5.99, 10.99, 100.99],
+//   period: ["ДЕНЬ", "НЕДІЛЯ", "МІСЯЦЬ", "РІК"]
+// }
+// const price = {
+//   "1": 1.99,
+//   "2": 5.99,
+//   "3": 10.99,
+//   "4": 100.99
+// };
+// const period = {
+//   "1": "ДЕНЬ",
+//   "2": "НЕДІЛЯ",
+//   "3": "МІСЯЦЬ",
+//   "4": "РІК"
+// };
+// const yourSubs = "МІСЯЦЬ"
+
+// switch(yourSubs) {
+//   case period["1"]: {
+//     console.log(`Your subscription price is ${price["1"]}`);
+//     break;
+// }
+//   case period["2"]: {
+//     console.log(`Your subscription price is ${price["2"]}`);
+//     break;
+// }
+//   case period["3"]: {
+//     console.log(`Your subscription price is ${price["3"]}`);
+//     break;
+// }
+//   case period["4"]: {
+//     console.log(`Your subscription price is ${price["4"]}`);
+//     break;
+// }
+//   default: {
+//     console.log(`Upps...`);
+//   }
+// }
+
+
+// НАПИШІТЬ ПРОГРАМУ, ЯКА БУДЕ ВИЗНАЧАТИ ДОВЖИНУ ІМЕНІ , ЯКЩО ІМЯ БІЛЬШЕ 7 СИМВОЛІВ, КОНСОЛЬ ВИВОДИТЬ "Wow, you  have a REALLY long name!" , ЯКЩО МЕНШЕ 7
+// "Your name isn't very long"
+
+// const name = "dfgfdg";
+
+// if (name.length > 7) {
+//   console.log("Wow, you  have a REALLY long name!");
+// } else {
+//    console.log("Your name isn't very long");
+// }
+//_______________________________________
+
+// FizzBuzz
+// Потрібно перебрати усі числа  від 1 до n. Треба вивести у консоль числа, де n - це ціле число, з такими умовами:
+
+// виведення fizz замість чисел, кратних 3;
+// виведення buzz замість чисел, кратних 5;
+// виведення fizzbuzz замість чисел, кратних як 3, і 5.
+
+
+// for ( let i = 1; i <= n; i += 1) {
+//   if ( i % 3 === 0 && i % 5 !== 0) {
+//     console.log("fizz")
+//   } else if ( i % 3 !== 0 && i % 5 === 0) {
+//     console.log("buzz")
+//   }
+// }
+
+
+// for ( let i = 1; i <= n; i += 1) {
+//   if ( i % 3 !== 0 && i % 5 !== 0) {
+//     console.log("Никакое", i);
+//   }
+
+// else
+//  {
+//     if ( i % 3 === 0 && i % 5 !== 0) {
+//     console.log("fizz");
+//   } else {
+//      console.log("fizzbuzz");
+//   }
+//    if ( i % 5 === 0) {
+//     console.log("buzz");
+//   }
+//   }
+ 
+// }
+// const n = 15;
+
+// for ( let i = 1; i <= n; i += 1) {
+//   if ( i % 3 === 0 && i % 5 === 0) {
+//     console.log("fizzbuzz");
+//   } else if (i % 3 === 0) {
+//     console.log("fizz");
+//   } else if (i % 5 === 0) {
+//     console.log("buzz");
+//   } else {
+//     console.log(i);
+//   }
+// }
+
+
+
+
+
+
+
