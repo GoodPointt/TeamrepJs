@@ -204,3 +204,145 @@ const numbers = [2, 5, 35, 56, 12, 24, 7, 80, 3];
 // updateCourse("vasya", "Oksana")
 // console.log("🚀 ~ file: index02.js:179 ~ collection:", collection)
 
+//TODO:=======================
+//Напиши скрипт, який для об'єкта user,
+//Послідовно:
+//1 додати поле mood зі значенням 'happy'
+//2 замінити hobby на 'skydiving'
+//3 замінити значення premium на false
+//4 виводити вміст об'єкта user у форматі
+//ключ:значення використовуючи Object.keys() і for...of
+// const user = {
+// name: "John",
+// age: 20,
+// hobby: "tennis",
+// premium: true,
+// };
+
+// user.mood = "happy";
+// user.hobby = "skydiving"
+
+// user.premium = false
+// console.log(user)
+// // console.log(Object.keys(user))
+
+// for (const key of Object.keys(user) ) {
+//     console.log(key + ":" + user[key])    
+// }
+
+
+// ___________________________________
+//TODO:=======================
+// Потрібно написати функцію, яка приймає 2 параметри obj і key, яка буде перебирати об'єкт.
+// Якщо об'єкт має такий ключ - поверне true
+// Є 2 варіанти рішення, спочатку напишемо функцію, потім вирішимо простим способом
+
+ const obj = {
+    name: 'Igor',
+    car:  'Mercedes',
+    carColor: 'black'
+}
+// function property(obj, key) {
+//     for (const prop in obj ) {
+//        if ( prop === key) {
+//           return true
+//        }
+//     }
+//   return false
+// }
+// console.log(property(obj,"carColor" ))
+
+
+// function property(obj, key) {
+//     if ( obj.hasOwnProperty(key)) {
+//         return true
+//     }
+//      return false
+// }
+// console.log(property(obj,"carColor" ))
+
+// ___________________________________________
+
+//TODO:=======================
+//У нас є об'єкт, у якому зберігатимуться зарплати
+//нашої команди
+//Напишіть код для сумування всіх зарплат і
+//збережіть його результат у змінній sum.
+//Якщо об'єкт salaries порожній, то результат має бути 0
+
+// const salaries = {
+//   Mango: 100,
+//   Poly: 160,
+//   Ajax: 1470,
+// };
+
+// let sum = 0;
+// for (let  value of Object.values(salaries)) {
+// console.log (value)
+// sum += value
+// }
+// console.log (sum)
+
+// // або
+// console.log(Object.values(salaries).reduce( ((sum,elem) => sum+=elem), 0))
+
+// _______________________________________
+
+//TODO:=======================
+//Напишіть ф-цію calcTotalPrice(stones, stonesName),
+//яка приймає масив об'єктів і
+//Рядок з назвою каменю.
+//Функція вважає, що м повертає загальну вартість каменів
+//з ​​таким ім'ям, ціною та кількістю з об'єкта
+
+// const stones = [
+// { name: "Смарагд", price: 1300, quantity: 4 },
+// { name: "Діамант", price: 2700, quantity: 6 },
+// { name: "Сапфір", price: 400, quantity: 7},
+// { name: "Щебінь", price: 150, quantity: 100 },
+// ];
+
+// function calcTotalPrice(stones, stonesName) {
+//     for (const stone of stones) {
+//         if (stonesName === stone.name) {
+//             return stone.price * stone.quantity
+//         }
+//     }
+// }
+// console.log(calcTotalPrice(stones, "Щебінь"))
+
+// або Деструктуризація
+// function calcTotalPrice(stones, stonesName) {
+//     for (const {name,price, quantity}  of stones) {
+//         if (stonesName === name) {
+//             return price * quantity
+//         }
+//     }
+// }
+// console.log(calcTotalPrice(stones, "Сапфір"))
+
+
+
+// _______________________________________
+
+
+//TODO:=======================
+//Створіть об'єкт calculator із трьома методами
+//read(a, b) - приймає два аргументи та зберігає їх
+//як властивості об'єкта
+//sum() - повертає суму збережених значень
+//mult() - перемножує збережені значення та повертає результат
+
+// const calculator = {
+//   read(a, b) {calculator.value1 = a; this.value2 = b},
+//   sum() {return calculator.value1 + this.value2},
+//   mult() {return calculator.value1 * this.value2},
+// };
+
+// calculator.read(2, 50)
+// calculator.sum()
+// calculator.mult()
+// console.log (calculator.sum())
+// console.log (calculator.mult())
+
+
