@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 30px;
+  background-color: rgb(130, 195, 132);
+}
+
+div {
+  margin-bottom: 100px;
+}
+
+.taskTitle {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+#box {
+  width: 50px;
+  height: 50px;
+  border: 2px dashed red;
+  margin: 10px;
+}
+
+#button-container {
+  display: inline-block;
+  margin-bottom: 0;
+}
